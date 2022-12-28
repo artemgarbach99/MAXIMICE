@@ -628,6 +628,17 @@ h6 {
   z-index: 50;
 }
 
+#preloader.hidden-preloader {
+  -webkit-animation: hidePreloader 10s;
+          animation: hidePreloader 10s;
+  -webkit-animation: borderAnimation 9s;
+          animation: borderAnimation 9s;
+}
+
+#preloader.preloader-hidden {
+  display: none;
+}
+
 #loader {
   display: block;
   position: relative;
