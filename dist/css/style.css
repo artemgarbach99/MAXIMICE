@@ -631,8 +631,6 @@ h6 {
 #preloader.hidden-preloader {
   -webkit-animation: hidePreloader 10s;
           animation: hidePreloader 10s;
-  -webkit-animation: borderAnimation 9s;
-          animation: borderAnimation 9s;
 }
 
 #preloader.preloader-hidden {
@@ -2452,6 +2450,79 @@ h6 {
   background: url("../img/mice/02.svg") 0 0 no-repeat;
 }
 
+.section01-mice-competencies {
+  padding-top: 7.0625rem;
+  padding-bottom: 11.875rem;
+}
+
+.section01-mice-competencies__wrapper {
+  position: relative;
+}
+
+.section01-mice-competencies__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section01-mice-competencies__content {
+  width: 57.2072072072%;
+}
+
+.section01-mice-competencies__lable {
+  margin-bottom: 1.5rem;
+}
+
+.section01-mice-competencies__image-ibg {
+  width: 45.3571428571%;
+  padding-bottom: 17.9285714286%;
+  position: absolute;
+  min-width: 21.625rem;
+  min-height: 8.5625rem;
+  right: -9.1875rem;
+}
+
+.section02-mice-competencies {
+  position: relative;
+}
+
+.section02-mice-competencies::before {
+  content: "";
+  position: absolute;
+  width: 16.8125rem;
+  height: 23rem;
+  top: -3.75rem;
+  right: 0;
+  background: url("../img/mice/section02/01.svg") 0 0 no-repeat;
+}
+
+.section02-mice-competencies__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6.25rem;
+}
+
+.section02-mice-competencies__list {
+  width: 40.0900900901%;
+}
+
+.section02-mice-competencies__lable {
+  max-width: 22.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 29.99875em) {
   .footer__links-mobile {
     display: none;
@@ -2545,6 +2616,17 @@ h6 {
   .title-mice-competencies__text::after {
     right: -18.75rem;
   }
+
+  .section02-mice-competencies::before {
+    right: -5.75rem;
+    width: 12.5rem;
+    height: 18.75rem;
+    background: url("../img/mice/section02/01.svg") 0 0/cover no-repeat;
+  }
+
+  .section02-mice-competencies__list {
+    max-width: 23.5625rem;
+  }
 }
 
 @media (any-hover: hover) and (max-width: 90em) {
@@ -2554,6 +2636,12 @@ h6 {
     top: 3.125rem;
     right: 8.5416666667%;
     background: url("../img/creative/title/01.svg") 0 0/cover no-repeat;
+  }
+}
+
+@media (max-width: 90em) and (max-width: 47.99875em) {
+  .section02-mice-competencies::before {
+    display: none;
   }
 }
 
@@ -2951,6 +3039,15 @@ h6 {
 
   .title-mice-competencies__block {
     padding: 0rem 0.9375rem;
+  }
+
+  .section01-mice-competencies__image-ibg {
+    right: -6.25rem;
+  }
+
+  .section02-mice-competencies__lable {
+    width: 30.6306306306%;
+    max-width: 16.875rem;
   }
 }
 
@@ -3355,6 +3452,54 @@ h6 {
     top: 4.25rem;
     width: 17.625rem;
     height: 1.875rem;
+  }
+
+  .section01-mice-competencies {
+    padding-top: 3.125rem;
+    padding-bottom: 4.375rem;
+  }
+
+  .section01-mice-competencies__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.125rem;
+  }
+
+  .section01-mice-competencies__content {
+    width: 100%;
+  }
+
+  .section01-mice-competencies__image-ibg {
+    position: relative;
+    right: 0;
+  }
+
+  .section02-mice-competencies__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 3.125rem;
+  }
+
+  .section02-mice-competencies__list {
+    width: 100%;
+    max-width: none;
+  }
+
+  .section02-mice-competencies__lable {
+    width: 100%;
+  }
+
+  .section02-mice-competencies__lable::before {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 8.25rem;
+    right: -1.5625rem;
+    background: url("../img/mice/section02/01.svg") 0 0/contain no-repeat;
   }
 }
 
