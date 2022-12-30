@@ -2575,6 +2575,14 @@ h6 {
     width: 0.9375rem;
   }
 
+  .title-creative-competencies._spoller-active::before {
+    width: 15.375rem;
+    height: 3.75rem;
+    top: 3.125rem;
+    right: 9.375%;
+    background: url("../img/creative/title/01.svg") 0 0/cover no-repeat;
+  }
+
   .title-creative-competencies__text {
     font-size: 1.125rem;
     max-width: 37.5rem;
@@ -2616,13 +2624,7 @@ h6 {
   }
 }
 
-@media (max-width: 90em) and (max-width: 47.99875em) {
-  .section02-mice-competencies::before {
-    display: none;
-  }
-}
-
-@media (any-hover: hover) and (max-width: 115.625em) {
+@media (any-hover: hover) and (max-width: 90em) {
   .title-creative-competencies:hover::before {
     width: 15.375rem;
     height: 3.75rem;
@@ -2632,13 +2634,9 @@ h6 {
   }
 }
 
-@media (max-width: 115.625em) {
-  .title-creative-competencies._spoller-active::before {
-    width: 15.375rem;
-    height: 3.75rem;
-    top: 3.125rem;
-    right: 9.375%;
-    background: url("../img/creative/title/01.svg") 0 0/cover no-repeat;
+@media (max-width: 90em) and (max-width: 47.99875em) {
+  .section02-mice-competencies::before {
+    display: none;
   }
 }
 
