@@ -1815,6 +1815,10 @@ h6 {
   color: #781E7D;
 }
 
+.section04-forum-competencies__lable._orange {
+  color: #CC9900;
+}
+
 .section04-forum-competencies__item {
   font-weight: 400;
   font-size: 1.125rem;
@@ -1828,6 +1832,10 @@ h6 {
   color: #781E7D;
 }
 
+.section04-forum-competencies__item._orange {
+  color: #CC9900;
+}
+
 .section04-forum-competencies__btn {
   padding: 1.1875rem 2.8125rem;
   border: 2px solid #6E828C;
@@ -1838,6 +1846,11 @@ h6 {
 .section04-forum-competencies__btn._violet {
   color: #781E7D;
   border: 2px solid #781E7D;
+}
+
+.section04-forum-competencies__btn._orange {
+  color: #CC9900;
+  border: 2px solid #CC9900;
 }
 
 .creative-competencies {
@@ -2245,6 +2258,13 @@ h6 {
   color: #252525;
 }
 
+.section02-creative-competencies__text._small-text {
+  text-transform: none;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
+  max-width: 39.5rem;
+}
+
 .mice-competencies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2551,6 +2571,139 @@ h6 {
           align-items: center;
 }
 
+.section03-mice-competencies {
+  padding-top: 7.875rem;
+  padding-bottom: 3.125rem;
+  overflow: hidden;
+}
+
+.section03-mice-competencies__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.625rem;
+}
+
+.section03-mice-competencies__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.625rem;
+}
+
+.section03-mice-competencies__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@supports (gap: clamp( 1.375rem , 0.875rem  +  1.0416666667vw , 2.125rem )) {
+  .section03-mice-competencies__row {
+    gap: clamp( 1.375rem , 0.875rem  +  1.0416666667vw , 2.125rem );
+  }
+}
+
+@supports not (gap: clamp( 1.375rem , 0.875rem  +  1.0416666667vw , 2.125rem )) {
+  .section03-mice-competencies__row {
+    gap: calc(1.375rem + 0.75 * (100vw - 48rem) / 72);
+  }
+}
+
+.section03-mice-competencies__row._first::before {
+  content: "";
+  position: absolute;
+  right: -12.6126126126%;
+  background: url("../img/mice/section03/vector.svg") 0 0/contain no-repeat;
+}
+
+@supports (width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._first::before {
+    width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem );
+  }
+}
+
+@supports not (width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._first::before {
+    width: calc(7.8125rem + 5.25 * (100vw - 90rem) / 30);
+  }
+}
+
+@supports (height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._first::before {
+    height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem );
+  }
+}
+
+@supports not (height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._first::before {
+    height: calc(7.8125rem + 5.25 * (100vw - 90rem) / 30);
+  }
+}
+
+.section03-mice-competencies__row._second::before {
+  content: "";
+  position: absolute;
+  left: -12.6126126126%;
+  background: url("../img/mice/section03/vector.svg") 0 0/contain no-repeat;
+}
+
+@supports (width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._second::before {
+    width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem );
+  }
+}
+
+@supports not (width: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._second::before {
+    width: calc(7.8125rem + 5.25 * (100vw - 90rem) / 30);
+  }
+}
+
+@supports (height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._second::before {
+    height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem );
+  }
+}
+
+@supports not (height: clamp( 7.8125rem , -7.9375rem  +  17.5vw , 13.0625rem )) {
+  .section03-mice-competencies__row._second::before {
+    height: calc(7.8125rem + 5.25 * (100vw - 90rem) / 30);
+  }
+}
+
+.section03-mice-competencies__image01-ibg {
+  width: 21.452991453%;
+  padding-bottom: 21.452991453%;
+  min-width: 15.6875rem;
+  min-height: 15.6875rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section03-mice-competencies__image02-ibg {
+  width: 54.2735042735%;
+  padding-bottom: 21.452991453%;
+  min-width: 39.6875rem;
+  min-height: 15.6875rem;
+  position: relative;
+  z-index: 2;
+}
+
 @media (min-width: 29.99875em) {
   .footer__links-mobile {
     display: none;
@@ -2670,6 +2823,18 @@ h6 {
   .section02-mice-competencies__list {
     max-width: 23.5625rem;
   }
+
+  .section03-mice-competencies__row._first::before {
+    right: -6.3063063063%;
+  }
+
+  .section03-mice-competencies__row._second {
+    margin-right: -8.125rem;
+  }
+
+  .section03-mice-competencies__row._second::before {
+    left: -0.9009009009%;
+  }
 }
 
 @media (max-width: 90em) and (max-width: 47.99875em) {
@@ -2719,6 +2884,16 @@ h6 {
   .images-section-forum__image02-ibg {
     min-width: 23.375rem;
     min-height: 9.125rem;
+  }
+
+  .section03-mice-competencies__image01-ibg {
+    min-width: 9.25rem;
+    min-height: 9.25rem;
+  }
+
+  .section03-mice-competencies__image02-ibg {
+    min-width: 23.25rem;
+    min-height: 9.25rem;
   }
 }
 
@@ -2798,6 +2973,18 @@ h6 {
 
   .title-mice-competencies__text::after {
     content: "";
+    display: none;
+  }
+
+  .section03-mice-competencies__row._first::before {
+    display: none;
+  }
+
+  .section03-mice-competencies__row._second {
+    margin-right: 0;
+  }
+
+  .section03-mice-competencies__row._second::before {
     display: none;
   }
 }
@@ -3566,6 +3753,32 @@ h6 {
     height: 8.25rem;
     right: -1.5625rem;
     background: url("../img/mice/section02/01.svg") 0 0/contain no-repeat;
+  }
+
+  .section03-mice-competencies {
+    padding-top: 4.375rem;
+  }
+
+  .section03-mice-competencies__body {
+    gap: 3.125rem;
+  }
+
+  .section03-mice-competencies__row._first {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .section03-mice-competencies__row._second {
+    display: none;
+  }
+
+  .section03-mice-competencies__image01-ibg {
+    margin-left: -3.125rem;
+  }
+
+  .section03-mice-competencies__image02-ibg {
+    margin-right: -9.375rem;
   }
 }
 
