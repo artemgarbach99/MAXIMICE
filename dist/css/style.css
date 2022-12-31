@@ -1958,7 +1958,7 @@ h6 {
 
 .title-creative-competencies._spoller-active .title-creative-competencies__row::before {
   content: "";
-  background: url("../img/creative/title/01.svg") 0 0 no-repeat;
+  background: url("../img/creative/title/01.svg") 0 0/contain no-repeat;
   position: absolute;
   width: 24.0625rem;
   height: 5.9375rem;
@@ -2680,19 +2680,17 @@ h6 {
 
 @media (any-hover: hover) and (max-width: 112.5em) {
   .title-creative-competencies:hover .title-creative-competencies__row::before {
-    width: 15.375rem;
-    height: 3.75rem;
+    max-width: 15.375rem;
+    max-height: 3.75rem;
     right: 9.375%;
-    background: url("../img/creative/title/01.svg") 0 0/cover no-repeat;
   }
 }
 
 @media (max-width: 112.5em) {
   .title-creative-competencies._spoller-active .title-creative-competencies__row::before {
-    width: 15.375rem;
-    height: 3.75rem;
+    max-width: 15.375rem;
+    max-height: 3.75rem;
     right: 9.375%;
-    background: url("../img/creative/title/01.svg") 0 0/cover no-repeat;
   }
 }
 
@@ -3055,8 +3053,8 @@ h6 {
   }
 
   .title-creative-competencies._spoller-active .title-creative-competencies__row::before {
-    width: 8.125rem;
-    height: 2rem;
+    max-width: 8.125rem;
+    max-height: 2rem;
   }
 
   .title-creative-competencies__row {
@@ -3107,8 +3105,8 @@ h6 {
 
 @media (any-hover: hover) and (max-width: 71.25em) {
   .title-creative-competencies:hover .title-creative-competencies__row::before {
-    width: 8.125rem;
-    height: 2rem;
+    max-width: 8.125rem;
+    max-height: 2rem;
   }
 
   .title-mice-competencies:hover::before {
@@ -3726,7 +3724,7 @@ h6 {
 
   .title-creative-competencies:hover .title-creative-competencies__row::before {
     content: "";
-    background: url("../img/creative/title/01.svg") 0 0 no-repeat;
+    background: url("../img/creative/title/01.svg") 0 0/contain no-repeat;
     position: absolute;
     width: 24.0625rem;
     height: 5.9375rem;
