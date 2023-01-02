@@ -4554,6 +4554,10 @@ h6 {
     margin-right: -9.375rem;
   }
 
+  .section01-online-competencies__title {
+    max-width: 18.75rem;
+  }
+
   .section02-online-competencies__title {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -4669,10 +4673,6 @@ h6 {
   .section04-forum-competencies__btn {
     width: 100%;
     text-align: center;
-  }
-
-  .section01-online-competencies__title {
-    max-width: 18.75rem;
   }
 }
 
