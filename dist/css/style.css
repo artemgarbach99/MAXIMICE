@@ -1413,6 +1413,13 @@ h6 {
   color: #FFFFFF;
 }
 
+.title-forum-competencies._spoller-active .title-forum-competencies__block {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  position: relative;
+}
+
 .title-forum-competencies__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1469,6 +1476,11 @@ h6 {
           flex: auto;
   position: relative;
   z-index: 2;
+  overflow: hidden;
+  -webkit-transform: translate(300%, 0px);
+      -ms-transform: translate(300%, 0px);
+          transform: translate(300%, 0px);
+  position: absolute;
 }
 
 .title-forum-competencies__text {
@@ -3027,16 +3039,6 @@ h6 {
   position: relative;
 }
 
-.section01-online-competencies::before {
-  content: "";
-  position: absolute;
-  width: 10.5625rem;
-  height: 6.5625rem;
-  top: 0.75rem;
-  right: -3.4375rem;
-  background: url("../img/online/section02/01.svg") 0 0/100% 100% no-repeat;
-}
-
 .section01-online-competencies__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4002,6 +4004,16 @@ h6 {
 
   .title-online-competencies__block {
     padding: 0rem 0.9375rem;
+  }
+
+  .section01-online-competencies::before {
+    content: "";
+    position: absolute;
+    width: 10.5625rem;
+    height: 6.5625rem;
+    top: 0.75rem;
+    right: -3.4375rem;
+    background: url("../img/online/section02/01.svg") 0 0/100% 100% no-repeat;
   }
 
   .section02-online-competencies::before {
