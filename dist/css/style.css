@@ -171,6 +171,10 @@ h6 {
   }
 }
 
+.wrapper > main._white-bg {
+  background-color: #FFFFFF;
+}
+
 .wrapper > * {
   min-width: 0;
 }
@@ -4539,6 +4543,499 @@ h6 {
   min-height: 15.6875rem;
 }
 
+.congress-title {
+  padding-top: 7.5rem;
+  padding-bottom: 16.25rem;
+  background-color: #6E828C;
+  position: relative;
+}
+
+.congress-title__body {
+  position: relative;
+}
+
+.congress-title__body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  margin-top: 7.5rem;
+  right: 0;
+  background: url("../img/congress/congress-title/vector.svg") 0 0/contain no-repeat;
+}
+
+@supports (width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-title__body::before {
+    width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem );
+  }
+}
+
+@supports not (width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-title__body::before {
+    width: calc(18.75rem + 3.125 * (100vw - 90rem) / 30);
+  }
+}
+
+@supports (height: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-title__body::before {
+    height: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem );
+  }
+}
+
+@supports not (height: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-title__body::before {
+    height: calc(18.75rem + 3.125 * (100vw - 90rem) / 30);
+  }
+}
+
+.congress-title__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 37.1875rem;
+}
+
+.congress-title__lable {
+  color: #FFFFFF;
+  padding-bottom: 1.875rem;
+}
+
+.congress-title__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.congress-title__sublable {
+  padding-top: 3.125rem;
+  text-transform: none;
+  color: #FFFFFF;
+}
+
+.congress-film {
+  padding-bottom: 5rem;
+}
+
+.congress-film__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.congress-film__image-ibg {
+  margin-top: -11.875rem;
+  width: 100%;
+  padding-bottom: 57.6576576577%;
+}
+
+.congress-film__text {
+  max-width: 45.625rem;
+}
+
+.congress-swiper__slide {
+  width: 27.8125rem;
+}
+
+.congress-swiper__image-ibg {
+  display: block;
+  padding-bottom: 76.404494382%;
+}
+
+.congress-content {
+  padding-top: 6.25rem;
+  padding-bottom: 18.125rem;
+}
+
+.congress-content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.875rem;
+}
+
+.congress-content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+  max-width: 33.75rem;
+}
+
+.congress-content__item {
+  border: 1px solid #252525;
+  border-radius: 5.625rem;
+  padding: 1.4375rem 5.1875rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
+  color: #252525;
+}
+
+.congress-content__lable {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.3571428571;
+  text-transform: uppercase;
+  color: #252525;
+}
+
+@supports (max-width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-content__lable {
+    max-width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem );
+  }
+}
+
+@supports not (max-width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .congress-content__lable {
+    max-width: calc(18.75rem + 3.125 * (100vw - 90rem) / 30);
+  }
+}
+
+.congress-bottom {
+  background-color: #6E828C;
+  padding-bottom: 5rem;
+}
+
+.congress-bottom__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.congress-bottom__image-ibg {
+  width: 100%;
+  padding-bottom: 57.6576576577%;
+  margin-top: -10.625rem;
+  position: relative;
+}
+
+.congress-bottom__image-ibg::before {
+  content: "";
+  position: absolute;
+  right: -24.4375rem;
+  background: url("../img/congress/congress-bottom/vector.svg") 0 0/contain no-repeat;
+  min-width: 41.0625rem;
+  min-height: 22.9375rem;
+  z-index: 2;
+}
+
+@supports (bottom: clamp( -9.9375rem , 2.4583333333rem  +  -10.3298611111vw , -2.5rem )) {
+  .congress-bottom__image-ibg::before {
+    bottom: clamp( -9.9375rem , 2.4583333333rem  +  -10.3298611111vw , -2.5rem );
+  }
+}
+
+@supports not (bottom: clamp( -9.9375rem , 2.4583333333rem  +  -10.3298611111vw , -2.5rem )) {
+  .congress-bottom__image-ibg::before {
+    bottom: calc(-2.5rem + -7.4375 * (100vw - 48rem) / 72);
+  }
+}
+
+@supports (width: clamp( 16.625rem , -2.7083333333rem  +  40.2777777778vw , 45.625rem )) {
+  .congress-bottom__image-ibg::before {
+    width: clamp( 16.625rem , -2.7083333333rem  +  40.2777777778vw , 45.625rem );
+  }
+}
+
+@supports not (width: clamp( 16.625rem , -2.7083333333rem  +  40.2777777778vw , 45.625rem )) {
+  .congress-bottom__image-ibg::before {
+    width: calc(16.625rem + 29 * (100vw - 48rem) / 72);
+  }
+}
+
+@supports (height: clamp( 9.3125rem , -1.4791666667rem  +  22.4826388889vw , 25.5rem )) {
+  .congress-bottom__image-ibg::before {
+    height: clamp( 9.3125rem , -1.4791666667rem  +  22.4826388889vw , 25.5rem );
+  }
+}
+
+@supports not (height: clamp( 9.3125rem , -1.4791666667rem  +  22.4826388889vw , 25.5rem )) {
+  .congress-bottom__image-ibg::before {
+    height: calc(9.3125rem + 16.1875 * (100vw - 48rem) / 72);
+  }
+}
+
+.congress-bottom__text {
+  max-width: 44rem;
+  color: #FFFFFF;
+}
+
+.travel-title {
+  padding-top: 7.5rem;
+  padding-bottom: 8.125rem;
+  background-color: #C3C800;
+  position: relative;
+}
+
+.travel-title__body {
+  position: relative;
+}
+
+.travel-title__body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../img/travel/travel-title/vector.svg") 0 0/contain no-repeat;
+}
+
+@supports (width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .travel-title__body::before {
+    width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem );
+  }
+}
+
+@supports not (width: clamp( 18.75rem , 9.375rem  +  10.4166666667vw , 21.875rem )) {
+  .travel-title__body::before {
+    width: calc(18.75rem + 3.125 * (100vw - 90rem) / 30);
+  }
+}
+
+@supports (height: clamp( 13.125rem , 6.1875rem  +  7.7083333333vw , 15.4375rem )) {
+  .travel-title__body::before {
+    height: clamp( 13.125rem , 6.1875rem  +  7.7083333333vw , 15.4375rem );
+  }
+}
+
+@supports not (height: clamp( 13.125rem , 6.1875rem  +  7.7083333333vw , 15.4375rem )) {
+  .travel-title__body::before {
+    height: calc(13.125rem + 2.3125 * (100vw - 90rem) / 30);
+  }
+}
+
+.travel-title__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 46.625rem;
+}
+
+.travel-title__lable {
+  color: #FFFFFF;
+  padding-bottom: 1.875rem;
+  max-width: 34.875rem;
+}
+
+.travel-title__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.travel-title__sublable {
+  padding-top: 3.125rem;
+  text-transform: none;
+  color: #FFFFFF;
+}
+
+.travel-film {
+  padding-bottom: 5rem;
+}
+
+.travel-film__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.travel-film__image-ibg {
+  margin-top: -3.75rem;
+  width: 100%;
+  padding-bottom: 57.6576576577%;
+}
+
+.travel-film__text {
+  max-width: 48.75rem;
+}
+
+.travel-swiper__slide {
+  width: 27.8125rem;
+}
+
+.travel-swiper__image-ibg {
+  display: block;
+  padding-bottom: 76.404494382%;
+}
+
+.travel-content {
+  padding-top: 5rem;
+  padding-bottom: 15.625rem;
+}
+
+.travel-content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.travel-content__text {
+  max-width: 45.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.travel-bottom {
+  background-color: #C3C800;
+  padding-bottom: 5rem;
+}
+
+.travel-bottom__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.travel-bottom__image-ibg {
+  width: 100%;
+  padding-bottom: 57.6576576577%;
+  margin-top: -10.625rem;
+  position: relative;
+}
+
+.travel-bottom__image-ibg::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: url("../img/travel/travel-title/vector.svg") 0 0/contain no-repeat;
+  min-width: 18.4375rem;
+  min-height: 12.875rem;
+  z-index: 2;
+}
+
+@supports (bottom: clamp( -10.625rem , 0.4166666667rem  +  -9.2013888889vw , -4rem )) {
+  .travel-bottom__image-ibg::before {
+    bottom: clamp( -10.625rem , 0.4166666667rem  +  -9.2013888889vw , -4rem );
+  }
+}
+
+@supports not (bottom: clamp( -10.625rem , 0.4166666667rem  +  -9.2013888889vw , -4rem )) {
+  .travel-bottom__image-ibg::before {
+    bottom: calc(-4rem + -6.625 * (100vw - 48rem) / 72);
+  }
+}
+
+@supports (width: clamp( 9.875rem , 1.875rem  +  16.6666666667vw , 21.875rem )) {
+  .travel-bottom__image-ibg::before {
+    width: clamp( 9.875rem , 1.875rem  +  16.6666666667vw , 21.875rem );
+  }
+}
+
+@supports not (width: clamp( 9.875rem , 1.875rem  +  16.6666666667vw , 21.875rem )) {
+  .travel-bottom__image-ibg::before {
+    width: calc(9.875rem + 12 * (100vw - 48rem) / 72);
+  }
+}
+
+@supports (height: clamp( 6.9375rem , 1.2708333333rem  +  11.8055555556vw , 15.4375rem )) {
+  .travel-bottom__image-ibg::before {
+    height: clamp( 6.9375rem , 1.2708333333rem  +  11.8055555556vw , 15.4375rem );
+  }
+}
+
+@supports not (height: clamp( 6.9375rem , 1.2708333333rem  +  11.8055555556vw , 15.4375rem )) {
+  .travel-bottom__image-ibg::before {
+    height: calc(6.9375rem + 8.5 * (100vw - 48rem) / 72);
+  }
+}
+
+.travel-bottom__text {
+  max-width: 44rem;
+  color: #FFFFFF;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.swiper-vertical .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-initialized .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.swiper-android .swiper-slide,
+.swiper-android .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.swiper-button-lock {
+  display: none !important;
+}
+
 @media (min-width: 29.99875em) {
   .footer__links-mobile {
     display: none;
@@ -4760,6 +5257,38 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .congress-title__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .congress-film__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .congress-content__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .congress-bottom__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .travel-title__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .travel-film__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .travel-content__body {
+    padding: 0rem 3.75rem;
+  }
+
+  .travel-bottom__body {
+    padding: 0rem 3.75rem;
+  }
 }
 
 @media (max-width: 90em) and (max-width: 47.99875em) {
@@ -4861,6 +5390,40 @@ h6 {
     min-width: 21.5625rem;
     min-height: 8.6875rem;
   }
+
+  .congress-bottom__image-ibg::before {
+    min-width: 0;
+    min-height: 0;
+  }
+
+@supports (right: clamp( -22.3125rem , 8.3571428571rem  +  -34.0773809524vw , -8rem )) {
+    .congress-bottom__image-ibg::before {
+      right: clamp( -22.3125rem , 8.3571428571rem  +  -34.0773809524vw , -8rem );
+    }
+}
+
+@supports not (right: clamp( -22.3125rem , 8.3571428571rem  +  -34.0773809524vw , -8rem )) {
+    .congress-bottom__image-ibg::before {
+      right: calc(-8rem + -14.3125 * (100vw - 48rem) / 42);
+    }
+}
+
+  .travel-bottom__image-ibg::before {
+    min-width: 0;
+    min-height: 0;
+  }
+
+@supports (right: clamp( -3rem , -6.4285715rem  +  7.1428572917vw , 0.0000000625rem )) {
+    .travel-bottom__image-ibg::before {
+      right: clamp( -3rem , -6.4285715rem  +  7.1428572917vw , 0.0000000625rem );
+    }
+}
+
+@supports not (right: clamp( -3rem , -6.4285715rem  +  7.1428572917vw , 0.0000000625rem )) {
+    .travel-bottom__image-ibg::before {
+      right: calc(-3rem + 3.0000000625 * (100vw - 48rem) / 42);
+    }
+}
 }
 
 @media (max-width: 87.5em) {
@@ -5000,6 +5563,44 @@ h6 {
         -ms-flex-align: start;
             align-items: flex-start;
     padding-right: 0.9375rem;
+  }
+
+  .congress-title__body::before {
+    width: 9.375rem;
+    height: 9.375rem;
+    top: -3.125rem;
+    right: -3.125rem;
+    margin-top: 0;
+  }
+
+  .congress-title__body {
+    position: static;
+  }
+
+  .congress-content__body {
+    padding: 0;
+  }
+
+  .congress-bottom__body {
+    padding: 0;
+  }
+
+  .travel-title__body::before {
+    width: 9.875rem;
+    height: 6.9375rem;
+    right: -3.125rem;
+  }
+
+  .travel-title__body {
+    position: static;
+  }
+
+  .travel-content__body {
+    padding: 0;
+  }
+
+  .travel-bottom__body {
+    padding: 0;
   }
 }
 
@@ -5478,6 +6079,24 @@ h6 {
   .section04-events-competencies__body {
     gap: 3.4375rem;
   }
+
+  .congress-title__body {
+    padding: 0;
+  }
+
+  .congress-film__body {
+    padding: 0;
+    gap: 2.5rem;
+  }
+
+  .travel-title__body {
+    padding: 0;
+  }
+
+  .travel-film__body {
+    padding: 0;
+    gap: 2.5rem;
+  }
 }
 
 @media (any-hover: hover) and (max-width: 71.25em) {
@@ -5784,6 +6403,78 @@ h6 {
 
   .section04-events-competencies {
     padding-bottom: 4.375rem;
+  }
+
+  .congress-title__sublable {
+    padding-top: 1.875rem;
+  }
+
+  .congress-film {
+    padding-bottom: 2.5rem;
+  }
+
+  .congress-content {
+    padding-top: 2.5rem;
+    padding-bottom: 8.125rem;
+  }
+
+  .congress-content__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .congress-content__items {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    gap: 0.625rem;
+  }
+
+  .congress-content__lable {
+    max-width: none;
+  }
+
+  .congress-bottom {
+    padding-bottom: 4.375rem;
+  }
+
+  .congress-bottom__body {
+    gap: 3.125rem;
+  }
+
+  .congress-bottom__image-ibg {
+    margin-top: -5rem;
+  }
+
+  .travel-title__sublable {
+    padding-top: 1.875rem;
+  }
+
+  .travel-film {
+    padding-bottom: 2.5rem;
+  }
+
+  .travel-content {
+    padding-top: 2.5rem;
+    padding-bottom: 6.875rem;
+  }
+
+  .travel-content__text {
+    gap: 0.625rem;
+  }
+
+  .travel-bottom {
+    padding-bottom: 3.125rem;
+  }
+
+  .travel-bottom__body {
+    gap: 3.125rem;
+  }
+
+  .travel-bottom__image-ibg {
+    margin-top: -5.625rem;
   }
 }
 
@@ -6266,6 +6957,57 @@ h6 {
 
   .section04-events-competencies__images {
     gap: 0.6875rem;
+  }
+
+  .congress-title {
+    padding-top: 3.75rem;
+    padding-bottom: 10rem;
+  }
+
+  .congress-title__lable {
+    max-width: 18.125rem;
+  }
+
+  .congress-film__image-ibg {
+    margin-top: -7.5rem;
+  }
+
+  .congress-swiper__slide {
+    width: 19.1875rem;
+  }
+
+  .congress-swiper__image-ibg {
+    padding-bottom: 76.2214983713%;
+  }
+
+  .congress-content__item {
+    font-size: 0.75rem;
+    padding: 1.4375rem 2.0625rem;
+  }
+
+  .congress-content__lable {
+    font-size: 0.75rem;
+  }
+
+  .travel-title {
+    padding-top: 3.75rem;
+    padding-bottom: 9.0625rem;
+  }
+
+  .travel-title__lable {
+    max-width: 18.125rem;
+  }
+
+  .travel-film__image-ibg {
+    margin-top: -6.5625rem;
+  }
+
+  .travel-swiper__slide {
+    width: 19.1875rem;
+  }
+
+  .travel-swiper__image-ibg {
+    padding-bottom: 76.2214983713%;
   }
 }
 
