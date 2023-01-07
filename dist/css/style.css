@@ -431,6 +431,9 @@ h6 {
   left: 0;
   height: 100%;
   border-right: 0.125rem solid #FFFFFF;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @supports (width: clamp( 21.875rem , -6.25rem  +  31.25vw , 31.25rem )) {
@@ -443,6 +446,11 @@ h6 {
   .header {
     width: calc(21.875rem + 9.375 * (100vw - 90rem) / 30);
   }
+}
+
+.header::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .header__body {
@@ -600,6 +608,7 @@ h6 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #252525;
+  white-space: nowrap;
 }
 
 @supports (font-size: clamp( 0.8125rem , -0.125rem  +  1.0416666667vw , 1.125rem )) {
@@ -684,6 +693,7 @@ h6 {
 .footer {
   padding: 2.6875rem 3.75rem;
   background-color: #5A5FAA;
+  z-index: 1;
 }
 
 .footer__body {
@@ -6777,6 +6787,13 @@ h6 {
     height: 100%;
     overflow: auto;
     padding: 2.625rem 1.9375rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
   .menu__body {
