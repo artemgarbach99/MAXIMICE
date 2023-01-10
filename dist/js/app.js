@@ -3863,6 +3863,33 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".swiper-history")) new core(".swiper-history", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                autoHeight: false,
+                speed: 800,
+                grabCursor: true,
+                direction: "vertical",
+                centeredSlides: true,
+                slideToClickedSlide: true,
+                loop: true,
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next"
+                },
+                breakpoints: {
+                    320: {
+                        direction: "horizontal"
+                    },
+                    768: {
+                        direction: "vertical"
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
