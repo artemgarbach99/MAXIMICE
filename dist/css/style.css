@@ -442,6 +442,7 @@ h6 {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  z-index: 5;
 }
 
 @supports (width: clamp( 21.875rem , -6.25rem  +  31.25vw , 31.25rem )) {
@@ -1549,9 +1550,11 @@ h6 {
   transition: all 1s ease 0s;
 }
 
+.no-webp .title-forum-competencies._spoller-active::before{
+  background: url("../img/forum/el.png") 0 0 no-repeat; }
+
 .title-forum-competencies._spoller-active::before {
   content: "";
-  background: url("../img/forum/el.png") 0 0 no-repeat;
   position: absolute;
   width: 20rem;
   height: 20rem;
@@ -1565,11 +1568,32 @@ h6 {
 }
 
 .title-forum-competencies._spoller-active .title-forum-competencies__text {
-  visibility: visible;
-  opacity: 1;
   -webkit-transition: all 0.5s ease 1s;
   -o-transition: all 0.5s ease 1s;
   transition: all 0.5s ease 1s;
+}
+
+.title-forum-competencies._spoller-active .title-forum-competencies__text::before {
+  content: "";
+  -webkit-animation: circle-left 0.7s linear 1s;
+          animation: circle-left 0.7s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.title-forum-competencies._spoller-active .title-forum-competencies__text::after {
+  content: "";
+  -webkit-animation: circle-right 0.7s linear 1s;
+          animation: circle-right 0.7s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.title-forum-competencies._spoller-active .title-forum-competencies__text p {
+  -webkit-animation: text-visable 0.7s linear 1.5s;
+          animation: text-visable 0.7s linear 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .title-forum-competencies._spoller-active .title-forum-competencies__arrow::before {
@@ -1656,24 +1680,19 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: hidden;
-  opacity: 0;
-  max-width: 46rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
   color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.3888888889;
+  padding: 0rem 4.375rem;
 }
 
 .title-forum-competencies__text::before {
   content: "";
   position: absolute;
-  left: -5.625rem;
+  left: 50%;
+  margin-left: -4rem;
   width: 4rem;
   height: 8rem;
   border: 2px solid #FFFFFF;
@@ -1684,12 +1703,23 @@ h6 {
 .title-forum-competencies__text::after {
   content: "";
   position: absolute;
-  right: -5.625rem;
+  right: 50%;
+  margin-right: -4rem;
   width: 4rem;
   height: 8rem;
   border: 2px solid #FFFFFF;
   border-left: none;
   border-radius: 0 100% 100% 0/0 50% 50% 0;
+}
+
+.title-forum-competencies__text p {
+  visibility: hidden;
+  opacity: 0;
+  max-width: 46rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.3333333333;
+  color: #F8F4FA;
 }
 
 .section01-forum-competencies {
@@ -5365,6 +5395,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1.875rem;
 }
 
 .mission-section01__title {
@@ -5432,7 +5463,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.875rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .mission-section01__content._sec02 {
@@ -5451,7 +5482,14 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
   position: relative;
+  padding-bottom: 1.25rem;
+  width: 100%;
+  padding-right: 1.875rem;
 }
 
 .mission-section01__link::before {
@@ -5459,23 +5497,41 @@ h6 {
   top: 0.9375rem;
   right: 0;
   font-size: 1.0625rem;
+  color: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
+.mission-section01__link._spoller-active {
+  padding-bottom: 0;
+}
+
+.mission-section01__link._spoller-active::before {
   color: rgba(255, 255, 255, 0.5);
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
 .mission-section01__text {
   color: #FFFFFF;
   padding: 1.25rem 0rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.25rem;
+}
+
+.mission-section01__text p {
+  display: block;
+}
+
+.mission-section01__text p:not(:last-child) {
+  margin-bottom: 1.25rem;
 }
 
 .mission-section02 {
@@ -5705,8 +5761,8 @@ h6 {
   margin-left: -5.5625rem;
   width: 5.5625rem;
   height: 11.875rem;
-  -webkit-animation: circle-left 3s linear 4s;
-          animation: circle-left 3s linear 4s;
+  -webkit-animation: circle-left 0.7s linear 3.5s;
+          animation: circle-left 0.7s linear 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -5719,8 +5775,8 @@ h6 {
   margin-right: -5.5625rem;
   width: 5.5625rem;
   height: 11.875rem;
-  -webkit-animation: circle-right 3s linear 4s;
-          animation: circle-right 3s linear 4s;
+  -webkit-animation: circle-right 0.7s linear 3.5s;
+          animation: circle-right 0.7s linear 3.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -5729,8 +5785,8 @@ h6 {
   max-width: 61.25rem;
   visibility: hidden;
   opacity: 0;
-  -webkit-animation: text-visable 1s linear 7s;
-          animation: text-visable 1s linear 7s;
+  -webkit-animation: text-visable 0.7s linear 4s;
+          animation: text-visable 0.7s linear 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   padding: 0rem 4.1875rem;
@@ -6752,12 +6808,34 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 6.5625rem;
+  overflow: hidden;
+}
+
+.history-content__body._watcher-view .history-content__swiper {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 1s ease 0.3s;
+  -o-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
+}
+
+.history-content__body._watcher-view .content-history-content {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 1s ease 0.3s;
+  -o-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
 }
 
 .history-content__swiper {
   min-width: 17.125rem;
   height: 53.4375rem;
   overflow: hidden;
+  -webkit-transform: translate(-300%, 0px);
+      -ms-transform: translate(-300%, 0px);
+          transform: translate(-300%, 0px);
 }
 
 .history-content__slide {
@@ -6792,7 +6870,9 @@ h6 {
   width: 2.125rem;
   height: 4.8125rem;
   left: 0;
-  background: url("../img/history/swiper-history/left.svg") 0 0/cover no-repeat;
+  border: 0.125rem solid #A564A5;
+  border-right: none;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
 
 .history-content__slide.swiper-slide-active .history-content__data::after {
@@ -6801,10 +6881,9 @@ h6 {
   width: 2.125rem;
   height: 4.8125rem;
   right: 0;
-  background: url("../img/history/swiper-history/left.svg") 0 0/cover no-repeat;
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  border: 0.125rem solid #A564A5;
+  border-left: none;
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
 }
 
 .history-content__slide.swiper-slide-active .history-content__inner {
@@ -6872,6 +6951,9 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 65.7657657658%;
+  -webkit-transform: translate(300%, 0px);
+      -ms-transform: translate(300%, 0px);
+          transform: translate(300%, 0px);
 }
 
 .content-history-content__lable {
@@ -7476,10 +7558,6 @@ h6 {
     }
 }
 
-  .mission-section01__body {
-    gap: 7.5rem;
-  }
-
   .mission-section01__body._sec02 {
     gap: 1.875rem;
     padding: 0;
@@ -7569,16 +7647,6 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 0 1.875rem 0;
-  }
-
-  .title-forum-competencies__text::before {
-    content: "";
-    display: none;
-  }
-
-  .title-forum-competencies__text::after {
-    content: "";
-    display: none;
   }
 
   .title-creative-competencies__lable {
@@ -8282,6 +8350,11 @@ h6 {
     gap: 2.5rem;
   }
 
+  .mission-section01__content {
+    width: 100%;
+    max-width: none;
+  }
+
   .responsibility-content__content::before {
     min-width: 0;
     min-height: 0;
@@ -8438,15 +8511,16 @@ h6 {
     height: 24.875rem;
   }
 
+  .no-webp .title-forum-competencies._spoller-active::before{
+    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
+
   .title-forum-competencies._spoller-active::before {
     width: 9.375rem;
     height: 9.375rem;
-    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 
   .title-forum-competencies__text {
     height: auto;
-    text-align: left;
   }
 
   .section01-forum-competencies {
@@ -8707,7 +8781,19 @@ h6 {
   }
 
   .mission-section01__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
+  }
+
+  .mission-section01__content._sec02 {
+    padding: 0 0 1.875rem;
+  }
+
+  .mission-section01__content {
+    gap: 1.25rem;
   }
 
   .mission-section01__link::before {
@@ -8967,10 +9053,11 @@ h6 {
 }
 
 @media (any-hover: hover) and (max-width: 61.99875em) {
+  .no-webp .title-forum-competencies:hover::before{
+    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
   .title-forum-competencies:hover::before {
     width: 9.375rem;
     height: 9.375rem;
-    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 }
 
@@ -9034,6 +9121,22 @@ h6 {
   .cases-main-content__image-ibg {
     width: 100%;
     padding-bottom: 54.9333333333%;
+  }
+
+  .title-forum-competencies__text {
+    padding: 0rem 5.625rem;
+  }
+
+  .title-forum-competencies__text::before {
+    width: 4.875rem;
+    height: 10.5rem;
+    margin-left: -4.875rem;
+  }
+
+  .title-forum-competencies__text::after {
+    width: 4.875rem;
+    height: 10.5rem;
+    margin-right: -4.875rem;
   }
 
   .section01-forum-competencies__body {
@@ -9556,26 +9659,8 @@ h6 {
     gap: 1.875rem;
   }
 
-  .mission-section01__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1.875rem;
-  }
-
-  .mission-section01__content._sec02 {
-    padding: 0 0 1.875rem;
-  }
-
-  .mission-section01__content {
-    width: 100%;
-    max-width: none;
-    gap: 1.25rem;
-  }
-
-  .mission-section01__text {
-    gap: 0.625rem;
+  .mission-section01__text p:not(:last-child) {
+    margin-bottom: 0.625rem;
   }
 
   .mission-section02__body::before {
@@ -9731,6 +9816,7 @@ h6 {
   .history-content__swiper {
     height: auto;
     overflow: visible;
+    padding: 0.625rem 0rem;
   }
 
   .history-content__slide {
@@ -9778,7 +9864,9 @@ h6 {
     width: 2.125rem;
     height: 4.8125rem;
     left: 0;
-    background: url("../img/history/swiper-history/left.svg") 0 0/cover no-repeat;
+    border: 0.125rem solid #6E828C;
+    border-right: none;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
   }
 
   .history-content__data::after {
@@ -9787,10 +9875,9 @@ h6 {
     width: 2.125rem;
     height: 4.8125rem;
     right: 0;
-    background: url("../img/history/swiper-history/left.svg") 0 0/cover no-repeat;
-    -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg);
+    border: 0.125rem solid #6E828C;
+    border-left: none;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
   }
 
   .history-content__lable {
@@ -9900,6 +9987,11 @@ h6 {
     padding-bottom: 70.7246376812%;
   }
 
+  .title-forum-competencies__text {
+    margin: 0rem -5rem;
+    text-align: left;
+  }
+
   .section04-forum-competencies__btn {
     width: 100%;
     text-align: center;
@@ -9983,9 +10075,11 @@ h6 {
     color: #FFFFFF;
   }
 
+  .no-webp .title-forum-competencies:hover::before{
+    background: url("../img/forum/el.png") 0 0 no-repeat; }
+
   .title-forum-competencies:hover::before {
     content: "";
-    background: url("../img/forum/el.png") 0 0 no-repeat;
     position: absolute;
     width: 20rem;
     height: 20rem;
@@ -10269,4 +10363,21 @@ h6 {
     transition: all 0.3s ease 0s;
     color: #FFFFFF;
   }
+}
+
+.webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
+
+@media (max-width: 61.99875em){
+
+  .webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
+}
+
+@media (any-hover: hover) and (max-width: 61.99875em){
+
+  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
+}
+
+@media (any-hover: hover){
+
+  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
 }
