@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230112144401">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230112170655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,7 @@
 					<div data-watch class="history-content__body">
 						<div class="history-content__swiper swiper-history">
 							<div class="history-content__wrapper swiper-wrapper">
-								<div class="history-content__slide swiper-slide">
+								<button class="history-content__slide swiper-slide tab__btn tab__btn--active" data-item="item-1">
 									<div class="history-content__inner">
 										<div class="history-content__data">
 											<span>2006-2011</span>
@@ -90,8 +90,8 @@
 										</h4>
 									</div>
 									<span class="history-content__line"></span>
-								</div>
-								<div class="history-content__slide swiper-slide">
+								</button>
+								<button class="history-content__slide swiper-slide tab__btn" data-item="item-2">
 									<div class="history-content__inner">
 										<div class="history-content__data">
 											<span>2011-2018</span>
@@ -99,8 +99,8 @@
 										<h4 class="history-content__lable text">Event & Creative Department</h4>
 									</div>
 									<span class="history-content__line"></span>
-								</div>
-								<div class="history-content__slide swiper-slide">
+								</button>
+								<button class="history-content__slide swiper-slide tab__btn" data-item="item-3">
 									<div class="history-content__inner">
 										<div class="history-content__data">
 											<span>2018-2019</span>
@@ -108,8 +108,8 @@
 										<h4 class="history-content__lable text">Лидер в MICE и Event</h4>
 									</div>
 									<span class="history-content__line"></span>
-								</div>
-								<div class="history-content__slide swiper-slide">
+								</button>
+								<button class="history-content__slide swiper-slide tab__btn" data-item="item-4">
 									<div class="history-content__inner">
 										<div class="history-content__data">
 											<span>2020</span>
@@ -117,8 +117,8 @@
 										<h4 class="history-content__lable text">Гибридные и online-проекты</h4>
 									</div>
 									<span class="history-content__line"></span>
-								</div>
-								<div class="history-content__slide swiper-slide">
+								</button>
+								<button class="history-content__slide swiper-slide tab__btn" data-item="item-5">
 									<div class="history-content__inner">
 										<div class="history-content__data">
 											<span>2021-2022</span>
@@ -127,23 +127,92 @@
 											Форумы и Конгрессы</h4>
 									</div>
 									<span class="history-content__line"></span>
-								</div>
+								</button>
 							</div>
 						</div>
-						<div class="history-content__content content-history-content">
-							<h2 class="content-history-content__lable h2">Лидер в MICE и Event</h2>
-							<div class="content-history-content__text text">
-								<p>
-									К началу 2020-го года компания подошла участником рейтинга ТОП 30 event-агентств
-									мира по
-									версии Bea World (единственная из России), обладателем более 30 престижных
-									наград
-									международных и российских премий, агентством, аккредитованным в АКАР и РРАР.
-									Оборот
-									компании достиг рекордного значения — около 2-х млрд. руб. в год.
-								</p>
+						<div class="history-content__block">
+							<div class="history-content__content content-history-content tab__item" id="item-1">
+								<h2 class="content-history-content__lable h2">Первая крупная независимая MICE-компания
+								</h2>
+								<div class="content-history-content__text text">
+									<p>
+										Компания MAXIMICE основана известным экспертом MICE-индустрии Еленой Мельниковой
+										в 2006 г. Компания изначально создавалась как крупный игрок на MICE-рынке,
+										ориентированный на работу с российскими и транснациональными корпорациями,
+										разрабатывая и реализуя MICE-проекты любой сложности в любой точке мира. 
+									</p>
+								</div>
+								<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/01.jpg" alt=""></picture>
+								</div>
 							</div>
-							<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/01.jpg" alt=""></picture>
+							<div class="history-content__content content-history-content tab__item" id="item-2">
+								<h2 class="content-history-content__lable h2">Event & Creative Department
+								</h2>
+								<div class="content-history-content__text text">
+									<p>
+										В 2011 году MAXIMICE усилил позиции в индустрии живых коммуникаций, создав
+										креативный департамент. С тех пор классические MICE-услуги стали частью
+										комплексного подхода по решению коммуникационных задач клиента, а компания
+										расширила спектр организуемых мероприятий, куда вошли корпоративные праздники,
+										лончи продуктов, мероприятия по продвижению брендов, форумы и другие креативные
+										форматы. Успешное развитие компании предопределяли и другие сильные
+										управленческие решения, среди которых создание уникальной для рынка службы
+										сопровождения проектов, введение стандартов обслуживания клиентов и стандартов
+										работы с поставщиками, учреждение отдельной компании по работе с частными
+										запросами представителей клиентов.
+									</p>
+								</div>
+								<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/02.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="history-content__content content-history-content tab__item tab__item--active" id="item-3">
+								<h2 class="content-history-content__lable h2">Трендсеттер в MICE и Event</h2>
+								<div class="content-history-content__text text">
+									<p>
+										К началу 2020-го года компания подошла участником рейтинга ТОП 30 event-агентств
+										мира по версии Bea World (единственная из России), обладателем более 30
+										престижных наград международных и российских премий, агентством, аккредитованным
+										в АКАР и РРАР. Оборот компании достиг рекордного значения - около 2-х млрд. руб.
+										в год. 
+									</p>
+								</div>
+								<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/03.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="history-content__content content-history-content tab__item" id="item-4">
+								<h2 class="content-history-content__lable h2">Гибридные и online-проекты</h2>
+								<div class="content-history-content__text text">
+									<p>
+										Пандемия коронавируса бросила новый вызов MAXIMICE, связанный с фактически
+										полным запретом на проведение любых мероприятий. Однако, компания продолжила
+										следовать своей миссии и предложила рынку эффективные онлайн-продукты, которые
+										оказались настолько убедительными, что уже с июня 20200-го года стали активно
+										завоевывать рынок. Таким образом, сложный 2020-й год стал для компании едва ли
+										не самым успешным в истории, ведь он обернулся не только положительными
+										финансовыми результатами, но и agile-трансформацией управленческой структуры -
+										команда стала более гибкой и мобильной, а успех преодоления кризиса был
+										закреплен в корпоративной культуре MAXIMICE. 
+									</p>
+								</div>
+								<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/01.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="history-content__content content-history-content tab__item" id="item-5">
+								<h2 class="content-history-content__lable h2">Новый отсчет: MICE, Event, Online, Форумы
+									и Конгрессы</h2>
+								<div class="content-history-content__text text">
+									<p>
+										К началу 2020-го года компания подошла участником рейтинга ТОП 30 event-агентств
+										мира по
+										версии Bea World (единственная из России), обладателем более 30 престижных
+										наград
+										международных и российских премий, агентством, аккредитованным в АКАР и РРАР.
+										Оборот
+										компании достиг рекордного значения — около 2-х млрд. руб. в год.
+									</p>
+								</div>
+								<div class="content-history-content__image-ibg"><picture><source data-srcset="img/history/content-history/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/history/content-history/05.jpg" alt=""></picture>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -193,7 +262,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230112144401"></script>
+	<script src="js/app.min.js?_v=20230112170655"></script>
 </body>
 
 </html>
