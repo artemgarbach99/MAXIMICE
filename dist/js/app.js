@@ -3875,6 +3875,7 @@
                 direction: "vertical",
                 centeredSlides: true,
                 slideToClickedSlide: true,
+                initialSlide: 2,
                 navigation: {
                     prevEl: ".swiper-button-prev",
                     nextEl: ".swiper-button-next"
