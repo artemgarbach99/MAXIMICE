@@ -6001,19 +6001,37 @@ h6 {
   position: relative;
 }
 
-.responsibility-content__item::before {
+.responsibility-content__item-body {
+  padding-top: 1.25rem;
+  color: #FFFFFF;
+}
+
+.responsibility-content__link {
+  display: block;
+  text-align: left;
+  max-width: 23.125rem;
+  color: #FFFFFF;
+  text-decoration-line: underline !important;
+}
+
+.responsibility-content__link::before {
   position: absolute;
   bottom: 3.5rem;
   right: 3.5rem;
   color: #FFFFFF;
   font-size: 1.625rem;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
-.responsibility-content__link {
-  display: block;
-  max-width: 23.125rem;
-  color: #FFFFFF;
-  text-decoration-line: underline !important;
+.responsibility-content__link._spoller-active::before {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .about-main {
@@ -9117,16 +9135,16 @@ h6 {
     gap: 1.25rem;
   }
 
-  .responsibility-content__item::before {
-    font-size: 1.125rem;
-    bottom: 1.5rem;
-    right: 1.5rem;
-  }
-
   .responsibility-content__item {
     padding: 3rem 1.5rem 4.375rem;
     height: auto;
     gap: 1.25rem;
+  }
+
+  .responsibility-content__link::before {
+    font-size: 1.125rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
   }
 
   .about-main {

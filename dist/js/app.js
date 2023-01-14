@@ -4124,13 +4124,6 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        window.onload = function() {
-            const preloader = document.getElementById("preloader");
-            preloader.classList.add("hidden-preloader");
-            setTimeout((function() {
-                preloader.classList.add("preloader-hidden");
-            }), 2950);
-        };
         const tabBtn = document.querySelectorAll(".tab__btn");
         const tabContents = document.querySelectorAll(".tab__item");
         tabBtn.forEach((function(element) {
