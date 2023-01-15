@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230114194724">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230115201601">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,9 +62,10 @@
 			</div>
 		</header>
 		<main class="page">
+			<!-- <div class="congress-wrapper"> -->
 			<section class="congress-title">
 				<div class="congress-title__container">
-					<div class="congress-title__body">
+					<div data-watch class="congress-title__body">
 						<div class="congress-title__content">
 							<h1 class="congress-title__lable h1">ФСКаннский кинофестиваль в Калининграде</h1>
 							<a href="" type="submit" class="congress-title__button button">Форумы и конгрессы</a>
@@ -79,7 +80,8 @@
 					<div class="congress-film__body">
 						<div class="congress-film__image-ibg"><picture><source data-srcset="img/congress/congress-film/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/congress/congress-film/01.png" alt=""></picture>
 						</div>
-						<p class="congress-film__text text">С 10 по 12 сентября объединенная команда ГК ФСК и MAXIMICE
+						<p class="congress-film__text text">С 10 по 12 сентября объединенная команда ГК ФСК и
+							MAXIMICE
 							организовала в Калининграде ФСКаннский Фестиваль — корпоративный проект, посвященный
 							16-летию одной из крупнейших и надежных строительных компаний России.</p>
 					</div>
@@ -105,7 +107,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="congress-content">
+			<!-- </div> -->
+			<section class="congress-content filter-action">
 				<div class="congress-content__container">
 					<div class="congress-content__body">
 						<div class="congress-content__items">
@@ -127,16 +130,21 @@
 								католическом соборе</div>
 							<div class="congress-content__item">Звездные ведущие @Дмитрий Кожома и @Иван Пышненко</div>
 						</div>
-						<h3 class="congress-content__lable">В рамках реализации проекта было сделано всё для того,
-							чтобы превратить выездное корпоративное мероприятие в настоящий международный кинофестиваль:
-						</h3>
+						<div data-sticky data-sticky-top="50" class="congress-content__lable-wrapper">
+							<h3 data-sticky-item class="congress-content__lable">В рамках реализации проекта было
+								сделано
+								всё для того,
+								чтобы превратить выездное корпоративное мероприятие в настоящий международный
+								кинофестиваль:
+							</h3>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="congress-bottom">
 				<div class="congress-bottom__container">
 					<div class="congress-bottom__body">
-						<div class="congress-bottom__image-ibg"><picture><source data-srcset="img/congress/congress-bottom/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/congress/congress-bottom/01.png" alt=""></picture>
+						<div data-watch class="congress-bottom__image-ibg"><picture><source data-srcset="img/congress/congress-bottom/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/congress/congress-bottom/01.png" alt=""></picture>
 						</div>
 						<p class="congress-bottom__text text">Благодаря совместным усилиям MAXIMICE и ГК ФСК, нам
 							удалось использовать выездное корпоративное мероприятие как эффективный инструмент решения
@@ -171,11 +179,6 @@
 			</footer>
 		</main>
 	</div>
-	<div id="preloader">
-		<div id="loader">
-		</div>
-		<img id="preloader-image" data-src="img/logo.svg" alt="">
-	</div>
 	<!-- 
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
@@ -188,7 +191,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230114194724"></script>
+	<script src="js/app.min.js?_v=20230115201601"></script>
 </body>
 
 </html>
