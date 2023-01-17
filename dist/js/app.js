@@ -3871,6 +3871,11 @@
                 centeredSlides: true,
                 slideToClickedSlide: true,
                 initialSlide: 5,
+                allowTouchMove: false,
+                navigation: {
+                    prevEl: ".history-content__button-prev",
+                    nextEl: ".history-content__button-next"
+                },
                 breakpoints: {
                     320: {
                         direction: "horizontal"
@@ -4168,23 +4173,36 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        const tabBtn = document.querySelectorAll(".tab__btn");
-        const tabContents = document.querySelectorAll(".tab__item");
-        tabBtn.forEach((function(element) {
-            element.addEventListener("click", openTabs);
+        document.querySelectorAll(".tabscontroller a").forEach((function(e) {
+            e.addEventListener("click", (function() {
+                document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
+                    b.classList.remove("active");
+                }));
+                e.classList.add("active");
+                var tabid = e.getAttribute("data-tab");
+                document.querySelector(".tab[data-tab='" + tabid + "']").classList.add("active");
+            }));
         }));
-        function openTabs(evt) {
-            const btnTarget = evt.currentTarget;
-            const item = btnTarget.dataset.item;
-            tabContents.forEach((function(item) {
-                item.classList.remove("tab__item--active");
+        document.querySelector("#next").addEventListener("click", (function() {
+            var tabid = parseInt(document.querySelector(".tabs > .tab.active").getAttribute("data-tab")) + 1;
+            if (tabid > document.querySelectorAll(".tabscontroller a").length) tabid = 1;
+            document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
+                b.classList.remove("active");
             }));
-            tabBtn.forEach((function(item) {
-                item.classList.remove("tab__btn--active");
+            document.querySelectorAll(".tabscontroller a[data-tab='" + tabid + "'], .tabs > .tab[data-tab='" + tabid + "']").forEach((function(b) {
+                b.classList.add("active");
             }));
-            document.querySelector(`#${item}`).classList.add("tab__item--active");
-            btnTarget.classList.add("tab__btn--active");
-        }
+        }));
+        document.querySelector("#back").addEventListener("click", (function() {
+            var tabid = parseInt(document.querySelector(".tabs > .tab.active").getAttribute("data-tab")) - 1;
+            if (tabid < 1) tabid = document.querySelectorAll(".tabscontroller a").length;
+            document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
+                b.classList.remove("active");
+            }));
+            document.querySelectorAll(".tabscontroller a[data-tab='" + tabid + "'], .tabs > .tab[data-tab='" + tabid + "']").forEach((function(b) {
+                b.classList.add("active");
+            }));
+        }));
         window["FLS"] = true;
         isWebp();
         menuInit();

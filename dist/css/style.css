@@ -1598,11 +1598,9 @@ h6 {
   transition: all 1s ease 0s;
 }
 
-.no-webp .title-forum-competencies._spoller-active::before{
-  background: url("../img/forum/el.png") 0 0 no-repeat; }
-
 .title-forum-competencies._spoller-active::before {
   content: "";
+  background: url("../img/forum/el.png") 0 0 no-repeat;
   position: absolute;
   width: 20rem;
   height: 20rem;
@@ -6944,6 +6942,7 @@ h6 {
 }
 
 .history-content__slide {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7007,6 +7006,42 @@ h6 {
   display: none;
 }
 
+.history-content__button-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #F8F4FA;
+  padding-bottom: 2.5rem;
+  z-index: 2;
+}
+
+.history-content__button-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #F8F4FA;
+  padding-top: 2.5rem;
+  z-index: 2;
+}
+
+.history-content__button-next img {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
 .history-content__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7067,7 +7102,7 @@ h6 {
           flex-direction: column;
 }
 
-.content-history-content.tab__item--active {
+.content-history-content.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8775,12 +8810,10 @@ h6 {
     height: 24.875rem;
   }
 
-  .no-webp .title-forum-competencies._spoller-active::before{
-    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
-
   .title-forum-competencies._spoller-active::before {
     width: 9.375rem;
     height: 9.375rem;
+    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 
   .title-forum-competencies__text {
@@ -9319,11 +9352,10 @@ h6 {
 }
 
 @media (any-hover: hover) and (max-width: 61.99875em) {
-  .no-webp .title-forum-competencies:hover::before{
-    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
   .title-forum-competencies:hover::before {
     width: 9.375rem;
     height: 9.375rem;
+    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 }
 
@@ -10135,6 +10167,14 @@ h6 {
     width: 100%;
   }
 
+  .history-content__button-prev {
+    display: none;
+  }
+
+  .history-content__button-next {
+    display: none;
+  }
+
   .history-content__inner {
     width: 100%;
   }
@@ -10369,11 +10409,9 @@ h6 {
     color: #FFFFFF;
   }
 
-  .no-webp .title-forum-competencies:hover::before{
-    background: url("../img/forum/el.png") 0 0 no-repeat; }
-
   .title-forum-competencies:hover::before {
     content: "";
+    background: url("../img/forum/el.png") 0 0 no-repeat;
     position: absolute;
     width: 20rem;
     height: 20rem;
@@ -10661,21 +10699,4 @@ h6 {
   .awards-items__card:hover .awards-items__image {
     mix-blend-mode: normal;
   }
-}
-
-.webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
-
-@media (max-width: 61.99875em){
-
-  .webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
-}
-
-@media (any-hover: hover) and (max-width: 61.99875em){
-
-  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
-}
-
-@media (any-hover: hover){
-
-  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
 }
