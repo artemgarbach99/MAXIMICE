@@ -1608,11 +1608,9 @@ h6 {
   transition: all 1s ease 0s;
 }
 
-.no-webp .title-forum-competencies._spoller-active::before{
-  background: url("../img/forum/el.png") 0 0 no-repeat; }
-
 .title-forum-competencies._spoller-active::before {
   content: "";
+  background: url("../img/forum/el.png") 0 0 no-repeat;
   position: absolute;
   width: 20rem;
   height: 20rem;
@@ -3973,11 +3971,9 @@ h6 {
   position: relative;
 }
 
-.no-webp .section01-travels-competencies::before{
-  background: url("../img/travels/section01/bg.png") 0 0/contain no-repeat; }
-
 .section01-travels-competencies::before {
   content: "";
+  background: url("../img/travels/section01/bg.png") 0 0/contain no-repeat;
   width: 55.0714285714%;
   height: 133.25%;
   position: absolute;
@@ -8843,12 +8839,10 @@ h6 {
     height: 24.875rem;
   }
 
-  .no-webp .title-forum-competencies._spoller-active::before{
-    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
-
   .title-forum-competencies._spoller-active::before {
     width: 9.375rem;
     height: 9.375rem;
+    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 
   .title-forum-competencies__text {
@@ -9362,11 +9356,10 @@ h6 {
 }
 
 @media (any-hover: hover) and (max-width: 61.99875em) {
-  .no-webp .title-forum-competencies:hover::before{
-    background: url("../img/forum/el.png") 0 0/contain no-repeat; }
   .title-forum-competencies:hover::before {
     width: 9.375rem;
     height: 9.375rem;
+    background: url("../img/forum/el.png") 0 0/contain no-repeat;
   }
 }
 
@@ -10371,11 +10364,9 @@ h6 {
     color: #FFFFFF;
   }
 
-  .no-webp .title-forum-competencies:hover::before{
-    background: url("../img/forum/el.png") 0 0 no-repeat; }
-
   .title-forum-competencies:hover::before {
     content: "";
+    background: url("../img/forum/el.png") 0 0 no-repeat;
     position: absolute;
     width: 20rem;
     height: 20rem;
@@ -10663,23 +10654,4 @@ h6 {
   .awards-items__card:hover .awards-items__image {
     mix-blend-mode: normal;
   }
-}
-
-.webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
-
-.webp .section01-travels-competencies::before{ background: url(../img/travels/section01/bg.webp) 0 0/contain no-repeat; }
-
-@media (max-width: 61.99875em){
-
-  .webp .title-forum-competencies._spoller-active::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
-}
-
-@media (any-hover: hover) and (max-width: 61.99875em){
-
-  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0/contain no-repeat; }
-}
-
-@media (any-hover: hover){
-
-  .webp .title-forum-competencies:hover::before{ background: url(../img/forum/el.webp) 0 0 no-repeat; }
 }
