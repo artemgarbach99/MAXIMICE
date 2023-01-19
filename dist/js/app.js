@@ -4173,36 +4173,6 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        document.querySelectorAll(".tabscontroller a").forEach((function(e) {
-            e.addEventListener("click", (function() {
-                document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
-                    b.classList.remove("active");
-                }));
-                e.classList.add("active");
-                var tabid = e.getAttribute("data-tab");
-                document.querySelector(".tab[data-tab='" + tabid + "']").classList.add("active");
-            }));
-        }));
-        document.querySelector("#next").addEventListener("click", (function() {
-            var tabid = parseInt(document.querySelector(".tabs > .tab.active").getAttribute("data-tab")) + 1;
-            if (tabid > document.querySelectorAll(".tabscontroller a").length) tabid = 1;
-            document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
-                b.classList.remove("active");
-            }));
-            document.querySelectorAll(".tabscontroller a[data-tab='" + tabid + "'], .tabs > .tab[data-tab='" + tabid + "']").forEach((function(b) {
-                b.classList.add("active");
-            }));
-        }));
-        document.querySelector("#back").addEventListener("click", (function() {
-            var tabid = parseInt(document.querySelector(".tabs > .tab.active").getAttribute("data-tab")) - 1;
-            if (tabid < 1) tabid = document.querySelectorAll(".tabscontroller a").length;
-            document.querySelectorAll(".tabscontroller a.active, .tabs > .tab.active").forEach((function(b) {
-                b.classList.remove("active");
-            }));
-            document.querySelectorAll(".tabscontroller a[data-tab='" + tabid + "'], .tabs > .tab[data-tab='" + tabid + "']").forEach((function(b) {
-                b.classList.add("active");
-            }));
-        }));
         window["FLS"] = true;
         isWebp();
         menuInit();
