@@ -1788,7 +1788,6 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 .section01-forum-competencies::after {
@@ -1797,7 +1796,7 @@ h6 {
   bottom: -5.3125rem;
   right: -1.5625rem;
   background: url("../img/forum/section01/bg.svg") 0 0/contain no-repeat;
-  z-index: 100;
+  z-index: 2;
 }
 
 @supports (width: clamp( 7.5rem , -4.3333333333rem  +  24.6527777778vw , 25.25rem )) {
@@ -1838,8 +1837,11 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  background: url("../img/forum/section01/01.png") 0 0/100% 100% no-repeat;
   position: relative;
-  padding: 14.6875rem 0rem;
+  padding-top: 16.7857142857%;
+  padding-bottom: 16.7857142857%;
+  overflow: hidden;
 }
 
 .section01-forum-competencies__shadow-tb::before {
@@ -1935,15 +1937,6 @@ h6 {
 
 .section01-forum-competencies__text {
   color: #FFFFFF;
-}
-
-.section01-forum-competencies__image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .section01-forum-competencies__line {
@@ -2102,6 +2095,7 @@ h6 {
   position: relative;
   z-index: 1;
   padding: 6.9375rem 0rem;
+  background: url("../img/forum/section03/01.png") center/cover no-repeat;
 }
 
 .section03-forum-competencies__wrapper {
@@ -2124,6 +2118,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   max-width: 26.125rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   gap: 1.875rem;
 }
 
@@ -2152,6 +2148,24 @@ h6 {
   max-width: 28.125rem;
 }
 
+.section03-forum-competencies__lable {
+  color: #FFFFFF;
+}
+
+.section03-forum-competencies__vector {
+  min-width: 5.25rem;
+  height: 8rem;
+  position: relative;
+}
+
+.section03-forum-competencies__vector img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .section04-forum-competencies {
   padding-top: 8.75rem;
   padding-bottom: 5.9375rem;
@@ -2168,20 +2182,14 @@ h6 {
   gap: 4.375rem;
 }
 
-.section04-forum-competencies__image {
-  width: 100%;
-  padding-bottom: 34.0714285714%;
+.section04-forum-competencies__inner {
   position: relative;
-  min-height: 15rem;
 }
 
-.section04-forum-competencies__image img {
-  background-size: cover;
-  position: absolute;
+.section04-forum-competencies__image-ibg {
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  padding-bottom: 34.0714285714%;
+  min-height: 18.75rem;
 }
 
 .section04-forum-competencies__row {
@@ -3558,9 +3566,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section02-online-competencies__list {
@@ -4028,7 +4036,7 @@ h6 {
   content: "";
   background: url("../img/travels/section01/bg.png") 0 0/contain no-repeat;
   width: 55.0714285714%;
-  height: 133.25%;
+  height: 108.25%;
   position: absolute;
   top: -17.5%;
   left: 3.5714285714%;
@@ -7671,12 +7679,6 @@ h6 {
     padding-bottom: 34.6226415094%;
   }
 
-  .section02-online-competencies__content {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-
   .section03-online-competencies__images {
     gap: 5.5rem;
   }
@@ -7686,7 +7688,7 @@ h6 {
   }
 
   .section01-travels-competencies::before {
-    top: 0;
+    top: 7.5%;
   }
 
   .section02-travels-competencies__row._first::before {
@@ -8489,8 +8491,16 @@ h6 {
   }
 
   .section01-forum-competencies::after {
-    bottom: -1.5625rem;
-    right: -1.5625rem;
+    bottom: -2.8125rem;
+    right: -2.8125rem;
+  }
+
+  .section01-forum-competencies__shadow-tb {
+    display: none;
+  }
+
+  .section01-forum-competencies__shadow-lr {
+    display: none;
   }
 
   .section01-forum-competencies__line::after {
@@ -8541,6 +8551,11 @@ h6 {
   .section02-forum-competencies__list {
     max-width: none;
     width: 100%;
+  }
+
+  .section03-forum-competencies__vector {
+    min-width: 3.625rem;
+    height: 5.5rem;
   }
 
   .section04-forum-competencies__row {
@@ -8648,12 +8663,6 @@ h6 {
     top: 0.75rem;
     right: -3.4375rem;
     background: url("../img/online/section02/01.svg") 0 0/100% 100% no-repeat;
-  }
-
-  .section02-online-competencies__content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .title-travels-competencies {
@@ -8906,10 +8915,6 @@ h6 {
     padding: 0;
   }
 
-  .section01-forum-competencies__body {
-    padding: 8.125rem 0rem;
-  }
-
   .section01-forum-competencies__block {
     gap: 1.25rem;
   }
@@ -8923,11 +8928,24 @@ h6 {
   }
 
   .section03-forum-competencies__row-01 {
-    padding: 3.125rem 0rem;
+    padding: 1.875rem 0rem;
+    margin: 0 0.3125rem;
+    border-radius: 3.3125rem;
+  }
+
+  .section03-forum-competencies__block-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .section04-forum-competencies {
-    padding-top: 4.375rem;
+    padding-top: 1.25rem;
     padding-bottom: 3.125rem;
   }
 
@@ -9525,6 +9543,7 @@ h6 {
 
   .section01-forum-competencies__body {
     gap: 5rem;
+    border-radius: 3.3125rem;
   }
 
   .section02-forum-competencies__inner {
@@ -9556,6 +9575,7 @@ h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    gap: 0;
   }
 
   .section03-forum-competencies__wrapper._reverse {
@@ -9563,17 +9583,11 @@ h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 1.25rem;
   }
 
   .section03-forum-competencies__list {
     max-width: none;
-  }
-
-  .section03-forum-competencies__block-bottom {
-    gap: 1.25rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .section03-forum-competencies__block-top {
@@ -9585,6 +9599,12 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
+  }
+
+  .section04-forum-competencies__inner {
+    border-radius: 3.3125rem;
+    overflow: hidden;
+    margin: 0 0.3125rem;
   }
 
   .section04-forum-competencies__row {
@@ -9767,10 +9787,6 @@ h6 {
   .title-travels-competencies__text::after {
     top: auto;
     right: -2.5rem;
-  }
-
-  .section01-travels-competencies::before {
-    display: none;
   }
 
   .section02-travels-competencies__row._first {
@@ -10337,6 +10353,10 @@ h6 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .section01-travels-competencies::before {
+    display: none;
   }
 
   .section02-travels-competencies__row._second {
