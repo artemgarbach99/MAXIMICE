@@ -4173,6 +4173,13 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        window.onload = function() {
+            const preloader = document.getElementById("preloader");
+            preloader.classList.add("hidden-preloader");
+            setTimeout((function() {
+                preloader.classList.add("preloader-hidden");
+            }), 2950);
+        };
         window["FLS"] = true;
         isWebp();
         menuInit();
