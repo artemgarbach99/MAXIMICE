@@ -3886,6 +3886,21 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".swiper-training")) new core(".swiper-training", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1.5,
+                spaceBetween: 40,
+                autoHeight: false,
+                speed: 800,
+                grabCursor: true,
+                navigation: {
+                    prevEl: ".sec09-main-training__button-prev",
+                    nextEl: ".sec09-main-training__button-next"
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
