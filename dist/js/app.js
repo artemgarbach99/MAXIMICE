@@ -3890,8 +3890,8 @@
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: 1.5,
-                spaceBetween: 40,
+                slidesPerView: "auto",
+                spaceBetween: 30,
                 autoHeight: false,
                 speed: 800,
                 grabCursor: true,
@@ -3899,8 +3899,42 @@
                     prevEl: ".sec09-main-training__button-prev",
                     nextEl: ".sec09-main-training__button-next"
                 },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 10
+                    },
+                    768: {
+                        spaceBetween: 40
+                    }
+                },
                 on: {}
             });
+            let swiperInstance;
+            function initSwiperRule() {
+                if (!swiperInstance) swiperInstance = new core(".swiper-rule", {
+                    modules: [ Navigation ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                    autoHeight: false,
+                    speed: 800,
+                    grabCursor: true,
+                    on: {}
+                });
+            }
+            initSwiperRule();
+            function destroySwiper() {
+                if (swiperInstance) {
+                    swiperInstance.destroy(true, true);
+                    swiperInstance = null;
+                }
+            }
+            function checkWindowSize() {
+                if (window.innerWidth <= 768) initSwiperRule(); else destroySwiper();
+            }
+            checkWindowSize();
+            window.addEventListener("resize", checkWindowSize);
         }
         window.addEventListener("load", (function(e) {
             initSliders();
