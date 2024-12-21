@@ -1500,11 +1500,6 @@ h6 {
   padding-left: 9.6875rem;
 }
 
-.competencies__spollers {
-  display: -ms-grid;
-  display: grid;
-}
-
 .training-competencies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2359,8 +2354,7 @@ h6 {
 }
 
 .sec09-main-training {
-  margin-bottom: 7.5rem;
-  max-width: 100%;
+  padding: 0 0.9375rem 7.5rem;
 }
 
 .sec09-main-training__top {
@@ -2379,8 +2373,8 @@ h6 {
       align-self: flex-start;
 }
 
-.sec09-main-training__wrap-slider {
-  margin-top: 7.5rem;
+.sec09-main-training__slider {
+  padding-top: 7.5rem;
 }
 
 .sec09-main-training__navigation {
@@ -2426,7 +2420,6 @@ h6 {
 }
 
 .sec09-main-training__slide {
-  max-width: 70%;
   border: 1px solid rgba(37, 37, 37, 0.1);
   padding: 1.5rem;
 }
@@ -10753,7 +10746,11 @@ h6 {
   }
 
   .sec09-main-training {
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sec09-main-training__slider {
+    padding-top: 5rem;
   }
 
   .sec09-main-training__slide {
@@ -11575,10 +11572,6 @@ h6 {
 
   .sec01-main-training__block-inner {
     padding: 6.25rem 1.875rem;
-  }
-
-  .sec09-main-training__slide {
-    max-width: 100%;
   }
 
   .title-forum-competencies__text {

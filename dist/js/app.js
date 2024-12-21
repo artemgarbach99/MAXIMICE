@@ -3890,7 +3890,7 @@
                 modules: [ Navigation ],
                 observer: true,
                 observeParents: true,
-                slidesPerView: "auto",
+                slidesPerView: 1.5,
                 spaceBetween: 30,
                 autoHeight: false,
                 speed: 800,
@@ -3901,10 +3901,12 @@
                 },
                 breakpoints: {
                     320: {
+                        slidesPerView: 1,
                         spaceBetween: 10
                     },
                     768: {
-                        spaceBetween: 40
+                        slidesPerView: 1.5,
+                        spaceBetween: 30
                     }
                 },
                 on: {}
