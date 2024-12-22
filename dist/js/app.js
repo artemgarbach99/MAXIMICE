@@ -3917,11 +3917,20 @@
                     modules: [ Navigation ],
                     observer: true,
                     observeParents: true,
-                    slidesPerView: 1.5,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                     autoHeight: false,
                     speed: 800,
                     grabCursor: true,
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1.5
+                        },
+                        550: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        }
+                    },
                     on: {}
                 });
             }
